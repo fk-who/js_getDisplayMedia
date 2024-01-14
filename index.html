@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>画面キャプチャのテスト</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="http://www.openjs.com/scripts/events/keyboard_shortcuts/shortcut.js" defer></script>
+        <script src="getDisplayMedia.js" defer></script>
+    </head>
+    <body>
+        <p>This example shows you the contents of the selected part of your display.
+        Click the Start Capture button to begin. <a href="https://developer.mozilla.org/ja/docs/Web/API/Screen_Capture_API/Using_Screen_Capture" target="_blank" rel="noopener">引用元</a></p>
+
+        <p class="controls">
+            <button id="fullscreen" class="buttonOutline">fullscreen</button>
+            <button id="fullwindow" class="buttonOutline">fullwindow</button>
+            <button id="start" class="buttonOutline">Start Capture</button>
+            <button id="stop" class="buttonOutline">Stop Capture</button>
+        </p>
+
+        <video id="video" autoplay></video>
+        <br>
+
+        <strong>Log:</strong>
+        <br>
+        <pre id="log"></pre>
+    </body>
+</html>
